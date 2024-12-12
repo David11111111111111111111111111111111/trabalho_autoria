@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio de João Silva</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body { font-family: Arial, sans-serif; }
+        header img { border: 2px solid #ccc; }
+        section { display: none; padding: 20px; }
+        section.active { display: block; }
+        footer { text-align: center; padding: 10px; background-color: #f8f9fa; }
+    </style>
+</head>
+<body>
+    <!-- Navegação -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Portfólio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#" onclick="mostrarSecao('home')">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" onclick="mostrarSecao('projetos')">Projetos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" onclick="mostrarSecao('contato')">Contato</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Seção Inicial -->
+    <section id="home" class="active">
+        <header class="text-center bg-light py-5">
+            <h1>João Silva</h1>
+            <img src="joaosilva.avif" alt="Foto do Profissional" class="rounded-circle" width="150">
+            <p class="mt-3">Desenvolvedor Front-End | Apaixonado por tecnologia e design</p>
+            <button class="btn btn-primary" onclick="mostrarSecao('contato')">Saiba mais</button>
+        </header>
+    </section>
+
+    <!-- Seção Projetos -->
+    <section id="projetos">
+        <div class="container">
+            <h2 class="text-center mb-4">Meus Projetos</h2>
+            <div class="row">
+                <!-- Projeto 1 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="pagina-inicial-de-aprendizagem-online-plana-e-linear_23-2148911371.avif" class="card-img-top" alt="Projeto 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Plataforma Educacional "Learn+"</h5>
+                            <p class="card-text">Desenvolvimento de uma plataforma interativa de ensino a distância, com recursos de chat ao vivo, quizzes e relatórios personalizados.</p>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalProjeto1">Ver mais</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Modal Projeto 1 -->
+                <div class="modal fade" id="modalProjeto1" tabindex="-1">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">Detalhes do Projeto:</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p>O projeto resultou em uma plataforma interativa de ensino a distância moderna e funcional, que oferece uma experiência eficiente tanto para alunos quanto para instrutores. A plataforma foi desenvolvida com um design responsivo e intuitivo, garantindo fácil acesso em dispositivos como desktops, tablets e smartphones. Os alunos têm à disposição um sistema de cadastro e login seguro, que os direciona para um painel pessoal com informações detalhadas sobre os cursos em andamento, o progresso individual e os módulos disponíveis. Cada curso é organizado em aulas com vídeos, textos e materiais complementares, proporcionando uma jornada de aprendizado estruturada e dinâmica. <p/>
+                                <p>Um dos diferenciais da plataforma é a inclusão de quizzes interativos ao final de cada módulo. Esses quizzes oferecem feedback automático e imediato, permitindo que os alunos acompanhem seu desempenho, identifiquem erros e reforcem os pontos necessários. Além disso, a plataforma conta com um chat ao vivo, que possibilita a comunicação em tempo real entre alunos e instrutores, promovendo um ambiente mais próximo e colaborativo. O histórico das conversas é salvo, permitindo que os alunos revisitem as dúvidas e soluções a qualquer momento. </p> 
+                                <P>Os relatórios personalizados também se destacam como uma funcionalidade essencial da plataforma. Eles fornecem métricas visuais detalhadas, como progresso nos cursos, taxa de acertos nos quizzes e tempo de conclusão das atividades. Essas informações são exibidas em gráficos e tabelas intuitivas, permitindo que tanto alunos quanto instrutores acompanhem o desempenho de forma clara e objetiva. Para os instrutores, a plataforma oferece uma área exclusiva de gerenciamento, onde é possível organizar os módulos, publicar materiais e criar quizzes personalizados, além de acessar relatórios completos sobre o engajamento e desempenho dos alunos. </p>
+                                <p>A plataforma foi construída com tecnologias modernas e seguras. O front-end utiliza HTML, CSS e JavaScript, com o suporte de frameworks como Bootstrap, garantindo um design responsivo e uma experiência agradável para o usuário. O back-end foi desenvolvido com Node.js, enquanto o banco de dados armazena com segurança todas as informações dos usuários, cursos e interações, utilizando MySQL ou MongoDB. O sistema de chat ao vivo foi implementado com tecnologias como WebSocket, possibilitando uma comunicação instantânea e eficiente. </p>
+                                <p>Como resultado, a plataforma de ensino a distância entrega um ambiente completo e inovador, que combina usabilidade, interatividade e análise detalhada do aprendizado. Os alunos têm acesso a uma experiência de estudo dinâmica e eficaz, com acompanhamento constante de seu progresso, enquanto os instrutores dispõem de ferramentas robustas para gerenciamento de conteúdo e análise de resultados. O projeto foi concluído com sucesso, oferecendo uma solução funcional e eficiente para o ensino online, focada em facilitar o aprendizado, promover a comunicação em tempo real e fornecer insights valiosos para o acompanhamento e a otimização do desempenho. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Projeto 2 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="pagina-de-destino-do-site-para-restaurante_1139417-125747.avif" class="card-img-top" alt="Projeto 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Redesign do Site GourmetTaste</h5>
+                            <p class="card-text">Recriação completa do site de um restaurante, incluindo design responsivo e otimização para dispositivos móveis.</p>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalProjeto2">Ver mais</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Modal Projeto 2 -->
+                <div class="modal fade" id="modalProjeto2" tabindex="-1">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">Detalhes do Projeto:</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+                            <div class="modal-body">
+                                O projeto resultou na recriação completa do site de um restaurante, com um design moderno, responsivo e otimizado para dispositivos móveis, garantindo uma navegação fluida em qualquer tela. O novo site apresenta imagens de alta qualidade, um menu organizado e intuitivo, além de botões estratégicos como "Faça sua reserva" e "Peça agora", facilitando o atendimento aos clientes. A otimização do desempenho e a aplicação de boas práticas de SEO garantem carregamento rápido e maior visibilidade online. O resultado é um site funcional, atrativo e alinhado às necessidades do restaurante e de seus clientes.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Projeto 3 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="site-planejamento-financeiro-pagina-inicial-modelo-design-ilustracao-vetor_148947-27.jpg" class="card-img-top" alt="Projeto 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Aplicativo Web de Gestão Financeira - BudgetPro</h5>
+                            <p class="card-text">Desenvolvimento de uma aplicação web para controle financeiro pessoal, com relatórios em tempo real e integração com APIs bancárias.</p>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalProjeto3">Ver mais</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Modal Projeto 3 -->
+                <div class="modal fade" id="modalProjeto3" tabindex="-1">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">Detalhes do Projeto:</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p>O projeto envolveu o desenvolvimento de uma aplicação web para controle financeiro pessoal, permitindo que os usuários acompanhassem suas receitas, despesas e investimentos de maneira simples e intuitiva. A plataforma oferece relatórios em tempo real, com gráficos interativos que mostram a saúde financeira de forma clara, ajudando os usuários a tomarem decisões informadas. Além disso, a aplicação organiza as transações em categorias e oferece alertas para gastos excessivos, facilitando o gerenciamento do orçamento.</p>
+                                <p>A integração com APIs bancárias foi um dos principais diferenciais do projeto, permitindo que as transações bancárias fossem importadas automaticamente para a plataforma, evitando a inserção manual de dados. A aplicação também garante segurança com autenticação e criptografia dos dados financeiros. Desenvolvida com tecnologias modernas como React, Node.js e JavaScript, a plataforma oferece uma solução ágil, automatizada e segura para o controle financeiro pessoal. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Contato -->
+    <section id="contato">
+        <div class="container">
+            <h2 class="text-center mb-4">Entre em Contato</h2>
+            <form id="formContato">
+                <div class="mb-3">
+                    <label for="nome" class="form-label">Nome</label>
+                    <input type="text" class="form-control" id="nome" placeholder="Seu nome">
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">E-mail</label>
+                    <input type="email" class="form-control" id="email" placeholder="Seu e-mail">
+                </div>
+                <div class="mb-3">
+                    <label for="mensagem" class="form-label">Mensagem</label>
+                    <textarea class="form-control" id="mensagem" rows="4"></textarea>
+                </div>
+                <button type="submit" class="btn btn-success">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Botão Voltar ao Topo -->
+    <button id="btnTopo" class="btn btn-secondary" style="position: fixed; bottom: 20px; right: 20px; display: none;">
+        Voltar ao Topo
+    </button>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2024 João Silva. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Alternar entre seções
+        function mostrarSecao(secao) {
+            document.querySelectorAll('section').forEach(s => s.classList.remove('active'));
+            document.getElementById(secao).classList.add('active');
+        }
+
+        // Mensagem de boas-vindas
+        window.onload = function () {
+            alert("Bem-vindo ao Portfólio de João Silva!");
+        };
+
+        // Botão "Voltar ao Topo"
+        const btnTopo = document.getElementById("btnTopo");
+        window.onscroll = function () {
+            btnTopo.style.display = window.scrollY > 200 ? "block" : "none";
+        };
+        btnTopo.onclick = function () {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        };
+
+        // Validação do formulário de contato
+        document.getElementById("formContato").addEventListener("submit", function (e) {
+            e.preventDefault();
+            const nome = document.getElementById("nome").value;
+            const email = document.getElementById("email").value;
+            const mensagem = document.getElementById("mensagem").value;
+
+            if (nome === '' || email === '' || mensagem === '') {
+                alert("Por favor, preencha todos os campos!");
+            } else {
+                alert("Mensagem enviada com sucesso! Obrigado.");
+                this.reset();
+            }
+        });
+    </script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
